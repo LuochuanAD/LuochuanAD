@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,,initial-scale=1.0,minimum-scale=1.0,maimum-scale=1.0,user-scalable=no"/>
+
+
+</head>
+<body>
+    <p id="dome">点击按钮,获取你的坐标:</p>
+    <button onclick="getLocation()">试一下</button>
+    <script>
+        var x=document.getElementById("demo");
+        function getLocation(){
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+
+            }else {
+                x.innerHTML="Geolocation is not supported by this browser.";
+
+            }
+
+        }
+        function showPosition(position){
+            x.innerHTML="Latitude: "+position.coords.latitude+"<br />Longitude: "+position.coords.longitude;
+        }
+    </script>
+</body>
+</html>

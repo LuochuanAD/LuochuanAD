@@ -7,8 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "LaunchScreenViewController.h"
+#import "LCMainViewController.h"
+#import "LCTabBarViewController.h"
+#import "LCForwardOneViewController.h"
+#import "LCForwardTwoViewController.h"
+#import "LCBackwardOneViewController.h"
+#import "LCBackwardTwoViewController.h"
+//#import "SGLNavigationViewController.h"
+//#import "MLNavigationController.h"
 
 @interface AppDelegate ()
+{
+    LCTabBarViewController *tabBarVC;
+}
 
 @end
 
@@ -16,11 +28,72 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//    [[AMapServices sharedServices] setEnableHTTPS:YES];
+    [AMapServices sharedServices].apiKey=@"bd1a9bb8de2061db8e283827d76701ca";
+    
     // Override point for customization after application launch.
+    self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    tabBarVC=[[LCTabBarViewController alloc]init];
+    
+    LCForwardOneViewController *forwardOneVC=[[LCForwardOneViewController alloc]init];
+    UINavigationController *forwardOneNav=[[UINavigationController alloc]initWithRootViewController:forwardOneVC];
+    forwardOneNav.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"One" image:[[UIImage imageNamed:@"lcmain"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"lcmain1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    LCForwardTwoViewController *forwardTwoVC=[[LCForwardTwoViewController alloc]init];
+    UINavigationController *forwardTwoNav=[[UINavigationController alloc]initWithRootViewController:forwardTwoVC];
+    forwardTwoNav.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"Two" image:[[UIImage imageNamed:@"lcflight"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"lcflight1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    LCMainViewController *mainVC=[[LCMainViewController alloc]init];
+    UINavigationController *mainNav=[[UINavigationController alloc]initWithRootViewController:mainVC];
+    LCBackwardOneViewController *backwardOneVC=[[LCBackwardOneViewController alloc]init];
+    UINavigationController *backwardOneNav=[[UINavigationController alloc]initWithRootViewController:backwardOneVC];
+    backwardOneNav.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"One" image:[[UIImage imageNamed:@"lcairport"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"lcairport1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    LCBackwardTwoViewController *backwardTwoVC=[[LCBackwardTwoViewController alloc]init];
+    UINavigationController *backwardTwoNav=[[UINavigationController alloc]initWithRootViewController:backwardTwoVC];
+    backwardTwoNav.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"Two" image:[[UIImage imageNamed:@"lcmine"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"lcmine1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    tabBarVC.viewControllers=@[forwardOneNav,forwardTwoNav,mainNav,backwardOneNav,backwardTwoNav];
+    self.window.rootViewController=tabBarVC;
+    self.window.backgroundColor=[UIColor whiteColor];
+    tabBarVC.selectedIndex=2;//指定当前页
+    [self.window makeKeyAndVisible];
+    
+    
+    __block LaunchScreenViewController *lanchVC=[[LaunchScreenViewController alloc]init];
+    [self.window addSubview:lanchVC.view];
+    [lanchVC viewScrollDidEnd:^{
+        [lanchVC.view removeFromSuperview];
+        lanchVC=nil;
+     [UIView animateWithDuration:0.1 animations:^{
+         mainVC.view.transform=CGAffineTransformMakeScale(1.2, 1.2);
+     } completion:^(BOOL finished) {
+         mainVC.view.transform=CGAffineTransformMakeScale(1.0, 1.0);
+     }];
+    }];
+    
+    [self handleLocationManagerWithApplication:application launchOptions:launchOptions];
+    
+    if (![UIPrintInteractionController isPrintingAvailable]) {
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"提醒" message:@"当前设备不支持打印机" delegate:nil cancelButtonTitle:@"我已知道" otherButtonTitles: nil];
+        [alert show];
+    }
+    
+    
+    
     return YES;
 }
 
-
+-(void) handleLocationManagerWithApplication:(UIApplication *)application launchOptions:(NSDictionary *)launchOptions{
+    self.sharedLocationManager = [LocationManager sharedInstance];
+    self.sharedLocationManager.resume = NO;
+    [self.sharedLocationManager saveApplicationStatusToPList:@"didFinishLaunchingWithOptions"];
+    if ([application backgroundRefreshStatus] == UIBackgroundRefreshStatusDenied || [application backgroundRefreshStatus] == UIBackgroundRefreshStatusRestricted) {
+        [[[UIAlertView alloc]initWithTitle:@"提示" message:@"请在iPhone的“设置-通用-后台应用刷新”选项中，允许上海机场APP开启后台应用刷新！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show];
+    }else{
+        if ([launchOptions objectForKey:UIApplicationLaunchOptionsLocationKey]) {
+            self.sharedLocationManager.resume = YES;
+            [self.sharedLocationManager startMonitoringLocation];
+            [self.sharedLocationManager saveResumeLocationToPList];
+        }
+    }
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -28,8 +101,8 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [self.sharedLocationManager restartMonitoringLocation];
+    [self.sharedLocationManager saveApplicationStatusToPList:@"applicationDidEnterBackground"];
 }
 
 
@@ -39,12 +112,14 @@
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [self.sharedLocationManager saveApplicationStatusToPList:@"applicationDidBecomeActive"];
+    self.sharedLocationManager.resume = NO;
+    [self.sharedLocationManager startMonitoringLocation];
 }
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [self.sharedLocationManager saveApplicationStatusToPList:@"applicationWillTerminate"];
 }
 
 

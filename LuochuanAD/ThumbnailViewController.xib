@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThumbnailViewController">
+            <connections>
+                <outlet property="navigationItem" destination="wEW-Ix-yFc" id="B6J-Dx-XMx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uu0-uc-4lS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="6CD-lr-IfN"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="Title" id="wEW-Ix-yFc">
+                            <barButtonItem key="rightBarButtonItem" title="完成" id="USg-bp-NuS">
+                                <connections>
+                                    <action selector="viewChangeByObject:" destination="iv9-gh-ngi" id="V3t-jL-aMF"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3nA-5k-F1a">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9ba-gj-D4w"/>
+                        <outlet property="delegate" destination="-1" id="tbg-dX-kAf"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Uu0-uc-4lS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pvc-LI-WSO"/>
+                <constraint firstAttribute="trailing" secondItem="Uu0-uc-4lS" secondAttribute="trailing" id="QvB-9P-E7d"/>
+                <constraint firstItem="Uu0-uc-4lS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XV8-4h-8yC"/>
+                <constraint firstItem="3nA-5k-F1a" firstAttribute="top" secondItem="Uu0-uc-4lS" secondAttribute="bottom" id="YKC-GS-WBy"/>
+                <constraint firstAttribute="trailing" secondItem="3nA-5k-F1a" secondAttribute="trailing" id="o63-2K-7PK"/>
+                <constraint firstItem="3nA-5k-F1a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="q3C-AK-jm7"/>
+                <constraint firstAttribute="bottom" secondItem="3nA-5k-F1a" secondAttribute="bottom" id="sIy-AB-YCb"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+        <customObject id="iv9-gh-ngi" customClass="CoordinatingController"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="142" id="Muk-wP-fb5" customClass="ScribbleThumbnailCell">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Muk-wP-fb5" id="xeO-x6-gaS">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="141.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="16" y="-431"/>
+        </tableViewCell>
+    </objects>
+</document>

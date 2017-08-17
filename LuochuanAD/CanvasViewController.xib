@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CanvasViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNA-Sx-QBR">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Sbc-lc-JJQ"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="8SP-0A-PDk"/>
+                        <barButtonItem title="删除" style="plain" id="RSz-xf-sDa" customClass="CommandBarButton">
+                            <connections>
+                                <action selector="onCustomBarButton:" destination="-1" id="nkn-l7-Lny"/>
+                                <outlet property="lcCommand" destination="Ycr-JN-Faq" id="qfW-XD-DaD"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="75f-mK-1YW"/>
+                        <barButtonItem title="保存" style="plain" id="jEf-wU-DMz" customClass="CommandBarButton">
+                            <connections>
+                                <action selector="onCustomBarButton:" destination="-1" id="RZi-7B-OXz"/>
+                                <outlet property="lcCommand" destination="JXj-lV-uP1" id="Otu-av-P6s"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="hmG-Aj-nwR"/>
+                        <barButtonItem tag="2" title="打开" style="plain" id="8Wf-Sa-jYs">
+                            <connections>
+                                <action selector="viewChangeByObject:" destination="Zes-kQ-FKD" id="Md1-jf-9BB"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="tuM-MB-dVL"/>
+                        <barButtonItem tag="3" title="调色板" id="FCO-W7-Vs0">
+                            <connections>
+                                <action selector="viewChangeByObject:" destination="Zes-kQ-FKD" id="4ho-Pp-o98"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="iz9-Xk-tvw"/>
+                        <barButtonItem tag="4" title="撤销" id="sTB-SF-YLh">
+                            <connections>
+                                <action selector="onBarbutton:" destination="-1" id="dJd-fe-51t"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="zvw-fq-gXr"/>
+                        <barButtonItem tag="5" title="恢复" id="BvM-7I-3fQ">
+                            <connections>
+                                <action selector="onBarbutton:" destination="-1" id="XLh-Rv-ueI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="KeR-pT-SDA"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xNA-Sx-QBR" secondAttribute="bottom" id="NGs-Xf-VIn"/>
+                <constraint firstItem="xNA-Sx-QBR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rs7-lE-8pe"/>
+                <constraint firstAttribute="trailing" secondItem="xNA-Sx-QBR" secondAttribute="trailing" id="Wq6-v9-VRT"/>
+            </constraints>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="-391" y="53"/>
+        </view>
+        <customObject id="Zes-kQ-FKD" customClass="CoordinatingController"/>
+        <customObject id="Ycr-JN-Faq" customClass="DeleteScribbleCommand"/>
+        <customObject id="JXj-lV-uP1" customClass="SaveScribbleCommand"/>
+    </objects>
+</document>
