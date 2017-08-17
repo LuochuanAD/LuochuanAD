@@ -170,6 +170,12 @@
 		445153A41ED2B60A006E2F65 /* LCKeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445153A21ED2B60A006E2F65 /* LCKeyChainViewController.m */; };
 		445153A51ED2B60A006E2F65 /* LCKeyChainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445153A31ED2B60A006E2F65 /* LCKeyChainViewController.xib */; };
 		445153A81ED2B68A006E2F65 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 445153A71ED2B68A006E2F65 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		445281F81F4566EA00269993 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445281F71F4566EA00269993 /* TimerViewController.m */; };
+		445281FE1F45685700269993 /* TimeUpdateTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 445281FD1F45685700269993 /* TimeUpdateTask.m */; };
+		445282011F45688600269993 /* timeSourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 445282001F45688600269993 /* timeSourceModel.m */; };
+		445282041F45870900269993 /* HightPerformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445282031F45870900269993 /* HightPerformanceViewController.m */; };
+		445282091F45956900269993 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445282081F45956900269993 /* DelegateViewController.m */; };
+		4452820C1F4595A400269993 /* DelegateUpdateTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4452820B1F4595A400269993 /* DelegateUpdateTask.m */; };
 		4455389D1E5E7C020018A35F /* LCBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455389C1E5E7C020018A35F /* LCBasicViewController.m */; };
 		445538A01E5EBCDB0018A35F /* Nav_new_rightarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4455389E1E5EBCDB0018A35F /* Nav_new_rightarrow@2x.png */; };
 		445538A11E5EBCDB0018A35F /* Nav_new_rightarrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4455389F1E5EBCDB0018A35F /* Nav_new_rightarrow@3x.png */; };
@@ -695,6 +701,18 @@
 		445153A31ED2B60A006E2F65 /* LCKeyChainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCKeyChainViewController.xib; sourceTree = "<group>"; };
 		445153A61ED2B68A006E2F65 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
 		445153A71ED2B68A006E2F65 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		445281F61F4566EA00269993 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		445281F71F4566EA00269993 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		445281FC1F45685700269993 /* TimeUpdateTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUpdateTask.h; sourceTree = "<group>"; };
+		445281FD1F45685700269993 /* TimeUpdateTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeUpdateTask.m; sourceTree = "<group>"; };
+		445281FF1F45688600269993 /* timeSourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeSourceModel.h; sourceTree = "<group>"; };
+		445282001F45688600269993 /* timeSourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = timeSourceModel.m; sourceTree = "<group>"; };
+		445282021F45870900269993 /* HightPerformanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HightPerformanceViewController.h; sourceTree = "<group>"; };
+		445282031F45870900269993 /* HightPerformanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HightPerformanceViewController.m; sourceTree = "<group>"; };
+		445282071F45956900269993 /* DelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
+		445282081F45956900269993 /* DelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
+		4452820A1F4595A400269993 /* DelegateUpdateTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateUpdateTask.h; sourceTree = "<group>"; };
+		4452820B1F4595A400269993 /* DelegateUpdateTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateUpdateTask.m; sourceTree = "<group>"; };
 		4455389B1E5E7C020018A35F /* LCBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBasicViewController.h; sourceTree = "<group>"; };
 		4455389C1E5E7C020018A35F /* LCBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBasicViewController.m; sourceTree = "<group>"; };
 		4455389E1E5EBCDB0018A35F /* Nav_new_rightarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nav_new_rightarrow@2x.png"; sourceTree = "<group>"; };
@@ -1552,6 +1570,7 @@
 		444E33D21E1B2D2100C9C8A3 /* Unitity */ = {
 			isa = PBXGroup;
 			children = (
+				445281F51F4564A100269993 /* highPerformances */,
 				44D3DE3D1EE7CA4500386A39 /* 设计模式 */,
 				44D3D99D1EE78DEA00386A39 /* OC与JS交互 */,
 				442718691EDE473600F9C3D3 /* PassBookAndPassKit */,
@@ -1619,6 +1638,41 @@
 				445153A31ED2B60A006E2F65 /* LCKeyChainViewController.xib */,
 			);
 			name = KeyChain;
+			sourceTree = "<group>";
+		};
+		445281F51F4564A100269993 /* highPerformances */ = {
+			isa = PBXGroup;
+			children = (
+				445282061F45950F00269993 /* 委托:解决循环 */,
+				445282051F4590D700269993 /* 定时器-统一方法 */,
+				445282021F45870900269993 /* HightPerformanceViewController.h */,
+				445282031F45870900269993 /* HightPerformanceViewController.m */,
+			);
+			name = highPerformances;
+			sourceTree = "<group>";
+		};
+		445282051F4590D700269993 /* 定时器-统一方法 */ = {
+			isa = PBXGroup;
+			children = (
+				445281F61F4566EA00269993 /* TimerViewController.h */,
+				445281F71F4566EA00269993 /* TimerViewController.m */,
+				445281FC1F45685700269993 /* TimeUpdateTask.h */,
+				445281FD1F45685700269993 /* TimeUpdateTask.m */,
+				445281FF1F45688600269993 /* timeSourceModel.h */,
+				445282001F45688600269993 /* timeSourceModel.m */,
+			);
+			name = "定时器-统一方法";
+			sourceTree = "<group>";
+		};
+		445282061F45950F00269993 /* 委托:解决循环 */ = {
+			isa = PBXGroup;
+			children = (
+				445282071F45956900269993 /* DelegateViewController.h */,
+				445282081F45956900269993 /* DelegateViewController.m */,
+				4452820A1F4595A400269993 /* DelegateUpdateTask.h */,
+				4452820B1F4595A400269993 /* DelegateUpdateTask.m */,
+			);
+			name = "委托:解决循环";
 			sourceTree = "<group>";
 		};
 		44880D151E82733900693303 /* LCChat */ = {
@@ -3129,6 +3183,7 @@
 				44F44E6F1E77F0170022A563 /* SDWebImageCompat.m in Sources */,
 				4445FE4B1EE92E6200B8AD9D /* PrototypeController.m in Sources */,
 				44F44E711E77F0170022A563 /* SDWebImageDownloader.m in Sources */,
+				445281FE1F45685700269993 /* TimeUpdateTask.m in Sources */,
 				44FED0B61ECBF8160073DA1D /* NSParagraphStyle+YYText.m in Sources */,
 				444ECDF31ECD8D7D009B8D99 /* LCTwitterAndFaceBookSharedViewController.m in Sources */,
 				44FED0B41ECBF8160073DA1D /* YYTextRunDelegate.m in Sources */,
@@ -3141,6 +3196,7 @@
 				44F44E701E77F0170022A563 /* SDWebImageDecoder.m in Sources */,
 				44FED0701ECBD5C20073DA1D /* LCAirPrintEditingViewController.m in Sources */,
 				44D3DE741EE7F3C400386A39 /* CommandBarButton.m in Sources */,
+				445281F81F4566EA00269993 /* TimerViewController.m in Sources */,
 				44F1A5881ECD4AB600C7DA4A /* UIView+SuAnimation.m in Sources */,
 				44FED0B81ECBF8160073DA1D /* UIView+YYText.m in Sources */,
 				4445FE421EE9123300B8AD9D /* MarkRenderer.m in Sources */,
@@ -3157,8 +3213,10 @@
 				443A06061EEF783700B11248 /* SetStrokeColorCommand.m in Sources */,
 				44D3DD441EE7954600386A39 /* HightCharsWebViewViewController.m in Sources */,
 				44E39D6A1E134EFD006C7EFA /* AppDelegate.m in Sources */,
+				445282041F45870900269993 /* HightPerformanceViewController.m in Sources */,
 				44D3DE261EE7962A00386A39 /* UIWebViewJSViewController.m in Sources */,
 				44F1A58E1ECD4AB600C7DA4A /* SuPhotoPreviewer.m in Sources */,
+				445282011F45688600269993 /* timeSourceModel.m in Sources */,
 				44FED1051ECC3F750073DA1D /* LCAirPrintWebViewController.m in Sources */,
 				44FED0B01ECBF8160073DA1D /* YYTextArchiver.m in Sources */,
 				44B286F01EC0554C004B5232 /* LCSuspendCustomView.m in Sources */,
@@ -3208,6 +3266,7 @@
 				44C61AE61E23644A00BF623B /* GameViewController.m in Sources */,
 				4414485A1EBAB57600A6F091 /* JKRBubbleViewController.m in Sources */,
 				44F44E6C1E77F0170022A563 /* NSImage+WebCache.m in Sources */,
+				445282091F45956900269993 /* DelegateViewController.m in Sources */,
 				44D3DB6B1EE78E2300386A39 /* RootViewController.m in Sources */,
 				44FED0BD1ECBF8160073DA1D /* YYLabel.m in Sources */,
 				442718701EDE4FD600F9C3D3 /* LCPassBookBasicViewController.m in Sources */,
@@ -3216,6 +3275,7 @@
 				44FED0B91ECBF8160073DA1D /* YYTextAsyncLayer.m in Sources */,
 				44FED0AC1ECBF8160073DA1D /* YYTextLayout.m in Sources */,
 				441448591EBAB57600A6F091 /* JKRBubblePresentationController.m in Sources */,
+				4452820C1F4595A400269993 /* DelegateUpdateTask.m in Sources */,
 				44FED0FC1ECC19410073DA1D /* UIGestureRecognizer+YYAdd.m in Sources */,
 				44F1A58C1ECD4AB600C7DA4A /* SuPhotoBrowser.m in Sources */,
 				44F1A4CF1ECD291000C7DA4A /* SLQPreViewController.m in Sources */,

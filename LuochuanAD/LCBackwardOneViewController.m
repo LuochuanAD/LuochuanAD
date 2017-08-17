@@ -9,7 +9,7 @@
 #import "LCBackwardOneViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import "MapLocationViewController.h"
-
+#import "HightPerformanceViewController.h"
 @interface LCBackwardOneViewController ()<CLLocationManagerDelegate>
 @property (nonatomic, strong)CLLocationManager *locationManager;
 @end
@@ -20,9 +20,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIBarButtonItem *rightBarItem=[[UIBarButtonItem alloc]initWithTitle:@"机位MapLocation" style:UIBarButtonItemStyleDone target:self action:@selector(pushToMapLocationViewController:)];
+    UIBarButtonItem *rightBarItem=[[UIBarButtonItem alloc]initWithTitle:@"机位MapLocation" style:UIBarButtonItemStyleDone target:self action:@selector(pushToMapLocationViewController)];
     [self.navigationItem setRightBarButtonItem:rightBarItem];
-
+    
+    UIBarButtonItem *leftBarItem=[[UIBarButtonItem alloc]initWithTitle:@"high-performances" style:UIBarButtonItemStyleDone target:self action:@selector(pushToTableViewController)];
+    [self.navigationItem setLeftBarButtonItem:leftBarItem];
+    
     
     [self requestCurrentAddress];
 }
@@ -31,12 +34,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (void)pushToMapLocationViewController:(UIButton *)button{
+- (void)pushToMapLocationViewController{
     MapLocationViewController *mapLocationVC=[[MapLocationViewController alloc]init];
     [self.navigationController pushViewController:mapLocationVC animated:YES];
     
 }
+- (void)pushToTableViewController{
+    HightPerformanceViewController *vc=[[HightPerformanceViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 
+
+}
 - (void)requestCurrentAddress{
     if ([CLLocationManager locationServicesEnabled]) {
         if (!_locationManager) {
