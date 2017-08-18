@@ -9,16 +9,16 @@
 #import "DelegateViewController.h"
 #import "DelegateUpdateTask.h"
 @interface DelegateViewController ()<UpdateTaskDelegate>
-{
-    DelegateUpdateTask *task;
-}
+
+@property (nonatomic, strong)DelegateUpdateTask *task;
 @end
 
 @implementation DelegateViewController
 
 -(void)dealloc{
-    if (task!=nil) {
-        [task cancel];
+    NSLog(@"%s called",__PRETTY_FUNCTION__);
+    if (self.task!=nil) {
+        [self.task cancel];
     }
 }
 - (void)viewDidLoad {
@@ -26,14 +26,16 @@
     [self performSelector:@selector(refresh) withObject:nil afterDelay:10];
 }
 - (void)refresh{
-    task=[[DelegateUpdateTask alloc]init];
-    task.delegate=self;
-    [task startUpdate];
-    task=nil;
+    NSLog(@"%s enter",__PRETTY_FUNCTION__);
+    self.task=[[DelegateUpdateTask alloc]init];
+    self.task.delegate=self;
+    [self.task startUpdate];
+    NSLog(@"%s exit",__PRETTY_FUNCTION__);
 }
 - (void)onDataAvailable:(NSArray *)records{
+    NSLog(@"%s called",__PRETTY_FUNCTION__);
     NSLog(@"--------更新--------%@",records);
-
+    self.task=nil;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

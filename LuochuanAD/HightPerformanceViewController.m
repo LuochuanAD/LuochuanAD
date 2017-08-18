@@ -9,11 +9,13 @@
 #import "HightPerformanceViewController.h"
 #import "TimerViewController.h"
 #import "DelegateViewController.h"
+#import "BlockViewController.h"
 @interface HightPerformanceViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *_tableView;
     NSArray *_mutArray;
 }
+@property (nonatomic, strong) NSArray *rowThreeTestDataArray;
 @end
 
 @implementation HightPerformanceViewController
@@ -21,7 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _mutArray=@[@"定时器10秒获取数据高兴 分类",@"委托 解决循环引用"];
+    self.rowThreeTestDataArray=[NSArray array];
+    _mutArray=@[@"定时器10秒获取数据高兴 分类",@"委托 解决循环引用",@"块"];
     [self createTableView];
 }
 
@@ -58,11 +61,27 @@
         DelegateViewController *vc=[[DelegateViewController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row==2){
-        
+        NSLog(@"---%@",self.rowThreeTestDataArray);
+        BlockViewController *vc=[[BlockViewController alloc]init];
+        __weak typeof(self) weakSelf=self;
+        [self presentViewController:vc animated:YES completion:^{
+            typeof(self) theSelf=weakSelf;
+            if (theSelf!=nil) {
+                theSelf.rowThreeTestDataArray=vc.dataArray;
+                [theSelf dismissViewControllerAnimated:YES completion:^{
+                    NSLog(@"===%@",theSelf.rowThreeTestDataArray);
+                }];
+            }
+        }];
         
     }
     
     
+}
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSLog(@"%s %@",__PRETTY_FUNCTION__,self.rowThreeTestDataArray);
+
 }
 /*
 #pragma mark - Navigation

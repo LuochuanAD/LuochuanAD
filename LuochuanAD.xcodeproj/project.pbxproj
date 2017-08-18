@@ -190,6 +190,7 @@
 		44B7B6AB1E35FD2900C094B0 /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B7B6AA1E35FD2900C094B0 /* MLNavigationController.m */; };
 		44B7B6AD1E3600A800C094B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B7B6AC1E3600A800C094B0 /* CoreGraphics.framework */; };
 		44B7B6AF1E36011B00C094B0 /* leftside_shadow_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B7B6AE1E36011B00C094B0 /* leftside_shadow_bg@2x.png */; };
+		44BB4DE01F4674BD00C500AC /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BB4DDF1F4674BD00C500AC /* BlockViewController.m */; };
 		44C61AE61E23644A00BF623B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C61AE51E23644A00BF623B /* GameViewController.m */; };
 		44C61AEC1E2365F100BF623B /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C61AEB1E2365F100BF623B /* GameCenterManager.m */; };
 		44C61AF21E23696400BF623B /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C61AF11E23696400BF623B /* GameKit.framework */; };
@@ -734,6 +735,8 @@
 		44B7B6AA1E35FD2900C094B0 /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
 		44B7B6AC1E3600A800C094B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		44B7B6AE1E36011B00C094B0 /* leftside_shadow_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftside_shadow_bg@2x.png"; sourceTree = "<group>"; };
+		44BB4DDE1F4674BD00C500AC /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		44BB4DDF1F4674BD00C500AC /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
 		44C61AE41E23644A00BF623B /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		44C61AE51E23644A00BF623B /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		44C61AEA1E2365F100BF623B /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
@@ -1643,6 +1646,7 @@
 		445281F51F4564A100269993 /* highPerformances */ = {
 			isa = PBXGroup;
 			children = (
+				44BB4DDD1F46748300C500AC /* 块 */,
 				445282061F45950F00269993 /* 委托:解决循环 */,
 				445282051F4590D700269993 /* 定时器-统一方法 */,
 				445282021F45870900269993 /* HightPerformanceViewController.h */,
@@ -1795,6 +1799,15 @@
 				44B286F21EC05CDB004B5232 /* LCSuspendCustomBaseViewController.m */,
 			);
 			name = "悬浮视图";
+			sourceTree = "<group>";
+		};
+		44BB4DDD1F46748300C500AC /* 块 */ = {
+			isa = PBXGroup;
+			children = (
+				44BB4DDE1F4674BD00C500AC /* BlockViewController.h */,
+				44BB4DDF1F4674BD00C500AC /* BlockViewController.m */,
+			);
+			name = "块";
 			sourceTree = "<group>";
 		};
 		44C61AE31E23640E00BF623B /* Leaderboard */ = {
@@ -3276,6 +3289,7 @@
 				44FED0AC1ECBF8160073DA1D /* YYTextLayout.m in Sources */,
 				441448591EBAB57600A6F091 /* JKRBubblePresentationController.m in Sources */,
 				4452820C1F4595A400269993 /* DelegateUpdateTask.m in Sources */,
+				44BB4DE01F4674BD00C500AC /* BlockViewController.m in Sources */,
 				44FED0FC1ECC19410073DA1D /* UIGestureRecognizer+YYAdd.m in Sources */,
 				44F1A58C1ECD4AB600C7DA4A /* SuPhotoBrowser.m in Sources */,
 				44F1A4CF1ECD291000C7DA4A /* SLQPreViewController.m in Sources */,
@@ -3563,6 +3577,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LuochuanAD/LuochuanAD-Prefix.pch";
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
 				INFOPLIST_FILE = LuochuanAD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -3589,6 +3604,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LuochuanAD/LuochuanAD-Prefix.pch";
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
 				INFOPLIST_FILE = LuochuanAD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
