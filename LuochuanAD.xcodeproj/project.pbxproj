@@ -85,6 +85,10 @@
 		443A060D1EEFB92A00B11248 /* ScribbleThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A060C1EEFB92A00B11248 /* ScribbleThumbnailCell.m */; };
 		443A060F1EEFBE8C00B11248 /* background_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 443A060E1EEFBE8C00B11248 /* background_texture.png */; };
 		443CB3481EA9D59C002089C8 /* building.png in Resources */ = {isa = PBXBuildFile; fileRef = 443CB3471EA9D59C002089C8 /* building.png */; };
+		4444EACD1F4A76A800788F73 /* KMSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4444EAC31F4A76A800788F73 /* KMSwizzle.m */; };
+		4444EACE1F4A76A800788F73 /* KMWeakObjectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4444EAC51F4A76A800788F73 /* KMWeakObjectContainer.m */; };
+		4444EACF1F4A76A800788F73 /* UINavigationController+KMNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4444EAC81F4A76A800788F73 /* UINavigationController+KMNavigationBarTransition.m */; };
+		4444EAD01F4A76A800788F73 /* UIViewController+KMNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4444EACB1F4A76A800788F73 /* UIViewController+KMNavigationBarTransition.m */; };
 		4445FE291EE8D0EC00B8AD9D /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4445FE281EE8D0EC00B8AD9D /* Dot.m */; };
 		4445FE2C1EE8D9AF00B8AD9D /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 4445FE2B1EE8D9AF00B8AD9D /* Stroke.m */; };
 		4445FE301EE8DAA700B8AD9D /* MarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4445FE2F1EE8DAA700B8AD9D /* MarkEnumerator.m */; };
@@ -588,6 +592,17 @@
 		443A060C1EEFB92A00B11248 /* ScribbleThumbnailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailCell.m; sourceTree = "<group>"; };
 		443A060E1EEFBE8C00B11248 /* background_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_texture.png; sourceTree = "<group>"; };
 		443CB3471EA9D59C002089C8 /* building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = building.png; sourceTree = "<group>"; };
+		4444EAC11F4A76A800788F73 /* KMNavigationBarTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMNavigationBarTransition.h; sourceTree = "<group>"; };
+		4444EAC21F4A76A800788F73 /* KMSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMSwizzle.h; sourceTree = "<group>"; };
+		4444EAC31F4A76A800788F73 /* KMSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMSwizzle.m; sourceTree = "<group>"; };
+		4444EAC41F4A76A800788F73 /* KMWeakObjectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMWeakObjectContainer.h; sourceTree = "<group>"; };
+		4444EAC51F4A76A800788F73 /* KMWeakObjectContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMWeakObjectContainer.m; sourceTree = "<group>"; };
+		4444EAC61F4A76A800788F73 /* UINavigationController+KMNavigationBarTransition_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+KMNavigationBarTransition_Internal.h"; sourceTree = "<group>"; };
+		4444EAC71F4A76A800788F73 /* UINavigationController+KMNavigationBarTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+KMNavigationBarTransition.h"; sourceTree = "<group>"; };
+		4444EAC81F4A76A800788F73 /* UINavigationController+KMNavigationBarTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+KMNavigationBarTransition.m"; sourceTree = "<group>"; };
+		4444EAC91F4A76A800788F73 /* UIViewController+KMNavigationBarTransition_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KMNavigationBarTransition_internal.h"; sourceTree = "<group>"; };
+		4444EACA1F4A76A800788F73 /* UIViewController+KMNavigationBarTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KMNavigationBarTransition.h"; sourceTree = "<group>"; };
+		4444EACB1F4A76A800788F73 /* UIViewController+KMNavigationBarTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KMNavigationBarTransition.m"; sourceTree = "<group>"; };
 		4445FE271EE8D0EC00B8AD9D /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		4445FE281EE8D0EC00B8AD9D /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
 		4445FE2A1EE8D9AF00B8AD9D /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
@@ -1377,6 +1392,24 @@
 			name = "Scribble Thumbnail Cell";
 			sourceTree = "<group>";
 		};
+		4444EABF1F4A768E00788F73 /* PushAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				4444EAC11F4A76A800788F73 /* KMNavigationBarTransition.h */,
+				4444EAC21F4A76A800788F73 /* KMSwizzle.h */,
+				4444EAC31F4A76A800788F73 /* KMSwizzle.m */,
+				4444EAC41F4A76A800788F73 /* KMWeakObjectContainer.h */,
+				4444EAC51F4A76A800788F73 /* KMWeakObjectContainer.m */,
+				4444EAC61F4A76A800788F73 /* UINavigationController+KMNavigationBarTransition_Internal.h */,
+				4444EAC71F4A76A800788F73 /* UINavigationController+KMNavigationBarTransition.h */,
+				4444EAC81F4A76A800788F73 /* UINavigationController+KMNavigationBarTransition.m */,
+				4444EAC91F4A76A800788F73 /* UIViewController+KMNavigationBarTransition_internal.h */,
+				4444EACA1F4A76A800788F73 /* UIViewController+KMNavigationBarTransition.h */,
+				4444EACB1F4A76A800788F73 /* UIViewController+KMNavigationBarTransition.m */,
+			);
+			path = PushAnimation;
+			sourceTree = "<group>";
+		};
 		4445FE2D1EE8DA6A00B8AD9D /* Iterator */ = {
 			isa = PBXGroup;
 			children = (
@@ -1573,6 +1606,7 @@
 		444E33D21E1B2D2100C9C8A3 /* Unitity */ = {
 			isa = PBXGroup;
 			children = (
+				4444EABF1F4A768E00788F73 /* PushAnimation */,
 				445281F51F4564A100269993 /* highPerformances */,
 				44D3DE3D1EE7CA4500386A39 /* 设计模式 */,
 				44D3D99D1EE78DEA00386A39 /* OC与JS交互 */,
@@ -3137,6 +3171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44F1A5401ECD47D200C7DA4A /* AlbumPhotoCell.m in Sources */,
+				4444EACE1F4A76A800788F73 /* KMWeakObjectContainer.m in Sources */,
 				44F44E791E77F0170022A563 /* UIImageView+HighlightedWebCache.m in Sources */,
 				44F1A5981ECD4AB600C7DA4A /* SuPhotoCenter.m in Sources */,
 				442718741EDE62BC00F9C3D3 /* BoardingPassViewController.m in Sources */,
@@ -3170,6 +3205,7 @@
 				4445FE451EE92C4600B8AD9D /* ClothCanvasView.m in Sources */,
 				44D3DD521EE7957800386A39 /* JSCallOCViewController.m in Sources */,
 				44E39D7E1E135D1B006C7EFA /* LaunchScreenViewController.m in Sources */,
+				4444EACD1F4A76A800788F73 /* KMSwizzle.m in Sources */,
 				4428844B1EB9DD72001FA8B4 /* LCAddNewContactPersonViewController.m in Sources */,
 				4445FE5F1EE943C900B8AD9D /* PaperCanvasViewGenerator.m in Sources */,
 				4412DF121E76671F00FC993B /* LocationManager.m in Sources */,
@@ -3203,6 +3239,7 @@
 				44F1A5861ECD4AB600C7DA4A /* UIImage+SU.m in Sources */,
 				44D3DE1C1EE795FC00386A39 /* WKWebViewJSViewController.m in Sources */,
 				4445FE481EE92D6D00B8AD9D /* PaperCanvasView.m in Sources */,
+				4444EAD01F4A76A800788F73 /* UIViewController+KMNavigationBarTransition.m in Sources */,
 				44F1A5431ECD47D200C7DA4A /* ImageEditVC.m in Sources */,
 				44FED0D81ECBFB6B0073DA1D /* YYImage.m in Sources */,
 				44F44E721E77F0170022A563 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -3248,6 +3285,7 @@
 				44E39D671E134EFD006C7EFA /* main.m in Sources */,
 				4448C2471ECECD8400B72D49 /* LCBackGroundtaskViewController.m in Sources */,
 				44F1A58B1ECD4AB600C7DA4A /* SuPhotoBaseController.m in Sources */,
+				4444EACF1F4A76A800788F73 /* UINavigationController+KMNavigationBarTransition.m in Sources */,
 				44E39DE81E13AA3A006C7EFA /* AFHTTPSessionManager.m in Sources */,
 				44F44E6A1E77F0170022A563 /* MKAnnotationView+WebCache.m in Sources */,
 				44D3DD4B1EE7956000386A39 /* OcCallJSViewController.m in Sources */,
