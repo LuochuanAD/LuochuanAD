@@ -10,6 +10,8 @@
 #import "TimerViewController.h"
 #import "DelegateViewController.h"
 #import "BlockViewController.h"
+#import "MultiScreenViewController.h"
+#import "BatteryAndCPUViewController.h"
 @interface HightPerformanceViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *_tableView;
@@ -24,10 +26,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.rowThreeTestDataArray=[NSArray array];
-    _mutArray=@[@"定时器10秒获取数据高兴 分类",@"委托 解决循环引用",@"块"];
+    _mutArray=@[@"定时器10秒获取数据高兴 分类",@"委托 解决循环引用",@"块",@"多屏",@"电池与cpu"];
     [self createTableView];
 }
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //阻止屏幕变暗,非常耗电,慎用
+    [UIApplication sharedApplication].idleTimerDisabled=YES;
 
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [UIApplication sharedApplication].idleTimerDisabled=NO;
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -74,6 +86,13 @@
             }
         }];
         
+    }else if (indexPath.row==3){
+        MultiScreenViewController *multiScreenVC=[[MultiScreenViewController alloc]init];
+        [self.navigationController pushViewController:multiScreenVC animated:YES];
+    }else if (indexPath.row==4){
+        BatteryAndCPUViewController *vc=[[BatteryAndCPUViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    
     }
     
     

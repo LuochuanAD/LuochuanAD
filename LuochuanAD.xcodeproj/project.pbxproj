@@ -187,6 +187,11 @@
 		445819491EA753EE00AFF67C /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445819481EA753EE00AFF67C /* AMapFoundationKit.framework */; };
 		4458194C1EA75C2C00AFF67C /* WGS84TOGCJ02.m in Sources */ = {isa = PBXBuildFile; fileRef = 4458194B1EA75C2C00AFF67C /* WGS84TOGCJ02.m */; };
 		446024AA1EEE2241003589A0 /* OpenScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 446024A91EEE2241003589A0 /* OpenScribbleCommand.m */; };
+		44857C3A1F6613F1003B0D02 /* MultiScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44857C391F6613F1003B0D02 /* MultiScreenViewController.m */; };
+		44857C3D1F661910003B0D02 /* SecondScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44857C3C1F661910003B0D02 /* SecondScreenViewController.m */; };
+		44857C411F6622C8003B0D02 /* BatteryAndCPUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44857C401F6622C8003B0D02 /* BatteryAndCPUViewController.m */; };
+		44857C451F66751F003B0D02 /* HPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 44857C441F66751F003B0D02 /* HPUser.m */; };
+		44857C481F6675D2003B0D02 /* HPUpdaterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44857C471F6675D2003B0D02 /* HPUpdaterService.m */; };
 		449D34621E1F5D67009D55BE /* flightAnimation1.png in Resources */ = {isa = PBXBuildFile; fileRef = 449D34611E1F5D67009D55BE /* flightAnimation1.png */; };
 		44B286F01EC0554C004B5232 /* LCSuspendCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B286EF1EC0554C004B5232 /* LCSuspendCustomView.m */; };
 		44B286F31EC05CDB004B5232 /* LCSuspendCustomBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B286F21EC05CDB004B5232 /* LCSuspendCustomBaseViewController.m */; };
@@ -740,6 +745,16 @@
 		4458194B1EA75C2C00AFF67C /* WGS84TOGCJ02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS84TOGCJ02.m; sourceTree = "<group>"; };
 		446024A81EEE2241003589A0 /* OpenScribbleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenScribbleCommand.h; sourceTree = "<group>"; };
 		446024A91EEE2241003589A0 /* OpenScribbleCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenScribbleCommand.m; sourceTree = "<group>"; };
+		44857C381F6613F1003B0D02 /* MultiScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiScreenViewController.h; sourceTree = "<group>"; };
+		44857C391F6613F1003B0D02 /* MultiScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiScreenViewController.m; sourceTree = "<group>"; };
+		44857C3B1F661910003B0D02 /* SecondScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondScreenViewController.h; sourceTree = "<group>"; };
+		44857C3C1F661910003B0D02 /* SecondScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondScreenViewController.m; sourceTree = "<group>"; };
+		44857C3F1F6622C8003B0D02 /* BatteryAndCPUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryAndCPUViewController.h; sourceTree = "<group>"; };
+		44857C401F6622C8003B0D02 /* BatteryAndCPUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryAndCPUViewController.m; sourceTree = "<group>"; };
+		44857C431F66751F003B0D02 /* HPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPUser.h; sourceTree = "<group>"; };
+		44857C441F66751F003B0D02 /* HPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPUser.m; sourceTree = "<group>"; };
+		44857C461F6675D2003B0D02 /* HPUpdaterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPUpdaterService.h; sourceTree = "<group>"; };
+		44857C471F6675D2003B0D02 /* HPUpdaterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPUpdaterService.m; sourceTree = "<group>"; };
 		449D34611E1F5D67009D55BE /* flightAnimation1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flightAnimation1.png; sourceTree = "<group>"; };
 		44B286EF1EC0554C004B5232 /* LCSuspendCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSuspendCustomView.m; sourceTree = "<group>"; };
 		44B286F11EC05CDB004B5232 /* LCSuspendCustomBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSuspendCustomBaseViewController.h; sourceTree = "<group>"; };
@@ -1680,6 +1695,9 @@
 		445281F51F4564A100269993 /* highPerformances */ = {
 			isa = PBXGroup;
 			children = (
+				44857C421F6674F5003B0D02 /* 线程安全 */,
+				44857C3E1F661DE8003B0D02 /* 电量与CPU */,
+				44857C371F6613B2003B0D02 /* 多屏 */,
 				44BB4DDD1F46748300C500AC /* 块 */,
 				445282061F45950F00269993 /* 委托:解决循环 */,
 				445282051F4590D700269993 /* 定时器-统一方法 */,
@@ -1711,6 +1729,37 @@
 				4452820B1F4595A400269993 /* DelegateUpdateTask.m */,
 			);
 			name = "委托:解决循环";
+			sourceTree = "<group>";
+		};
+		44857C371F6613B2003B0D02 /* 多屏 */ = {
+			isa = PBXGroup;
+			children = (
+				44857C381F6613F1003B0D02 /* MultiScreenViewController.h */,
+				44857C391F6613F1003B0D02 /* MultiScreenViewController.m */,
+				44857C3B1F661910003B0D02 /* SecondScreenViewController.h */,
+				44857C3C1F661910003B0D02 /* SecondScreenViewController.m */,
+			);
+			name = "多屏";
+			sourceTree = "<group>";
+		};
+		44857C3E1F661DE8003B0D02 /* 电量与CPU */ = {
+			isa = PBXGroup;
+			children = (
+				44857C3F1F6622C8003B0D02 /* BatteryAndCPUViewController.h */,
+				44857C401F6622C8003B0D02 /* BatteryAndCPUViewController.m */,
+			);
+			name = "电量与CPU";
+			sourceTree = "<group>";
+		};
+		44857C421F6674F5003B0D02 /* 线程安全 */ = {
+			isa = PBXGroup;
+			children = (
+				44857C431F66751F003B0D02 /* HPUser.h */,
+				44857C441F66751F003B0D02 /* HPUser.m */,
+				44857C461F6675D2003B0D02 /* HPUpdaterService.h */,
+				44857C471F6675D2003B0D02 /* HPUpdaterService.m */,
+			);
+			name = "线程安全";
 			sourceTree = "<group>";
 		};
 		44880D151E82733900693303 /* LCChat */ = {
@@ -3217,6 +3266,7 @@
 				44B286F31EC05CDB004B5232 /* LCSuspendCustomBaseViewController.m in Sources */,
 				44F44E761E77F0170022A563 /* UIImage+GIF.m in Sources */,
 				44F44E741E77F0170022A563 /* SDWebImagePrefetcher.m in Sources */,
+				44857C451F66751F003B0D02 /* HPUser.m in Sources */,
 				44FED0AF1ECBF8160073DA1D /* YYTextSelectionView.m in Sources */,
 				4445FE551EE935E900B8AD9D /* Scribble.m in Sources */,
 				44FED0AB1ECBF8160073DA1D /* YYTextKeyboardManager.m in Sources */,
@@ -3262,6 +3312,7 @@
 				44B7B6AB1E35FD2900C094B0 /* MLNavigationController.m in Sources */,
 				443A06061EEF783700B11248 /* SetStrokeColorCommand.m in Sources */,
 				44D3DD441EE7954600386A39 /* HightCharsWebViewViewController.m in Sources */,
+				44857C481F6675D2003B0D02 /* HPUpdaterService.m in Sources */,
 				44E39D6A1E134EFD006C7EFA /* AppDelegate.m in Sources */,
 				445282041F45870900269993 /* HightPerformanceViewController.m in Sources */,
 				44D3DE261EE7962A00386A39 /* UIWebViewJSViewController.m in Sources */,
@@ -3295,6 +3346,8 @@
 				44F1A5901ECD4AB600C7DA4A /* SuAblumInfo.m in Sources */,
 				444E33D51E1B2D5500C9C8A3 /* TableViewController.m in Sources */,
 				44F1A5461ECD47D200C7DA4A /* UIImage+Additions.m in Sources */,
+				44857C411F6622C8003B0D02 /* BatteryAndCPUViewController.m in Sources */,
+				44857C3D1F661910003B0D02 /* SecondScreenViewController.m in Sources */,
 				44F1A5471ECD47D200C7DA4A /* UIView+Additions.m in Sources */,
 				44D3DE631EE7D81A00386A39 /* CoordinatingController.m in Sources */,
 				443A06091EEF789C00B11248 /* SetStrokeSizeCommand.m in Sources */,
@@ -3370,6 +3423,7 @@
 				44FED1011ECC19410073DA1D /* YYWeakProxy.m in Sources */,
 				4445FE2C1EE8D9AF00B8AD9D /* Stroke.m in Sources */,
 				44D3DE2D1EE7964300386A39 /* JSUIWebViewViewController.m in Sources */,
+				44857C3A1F6613F1003B0D02 /* MultiScreenViewController.m in Sources */,
 				44FF1AC11ECE9CF6007E4F6B /* ICFTimeLineCell.m in Sources */,
 				44E39DA71E139E6E006C7EFA /* LCBackwardOneViewController.m in Sources */,
 				44F1A5961ECD4AB600C7DA4A /* SuPhotoPicker.m in Sources */,
