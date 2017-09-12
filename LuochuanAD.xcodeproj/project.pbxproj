@@ -187,6 +187,9 @@
 		445819491EA753EE00AFF67C /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445819481EA753EE00AFF67C /* AMapFoundationKit.framework */; };
 		4458194C1EA75C2C00AFF67C /* WGS84TOGCJ02.m in Sources */ = {isa = PBXBuildFile; fileRef = 4458194B1EA75C2C00AFF67C /* WGS84TOGCJ02.m */; };
 		446024AA1EEE2241003589A0 /* OpenScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 446024A91EEE2241003589A0 /* OpenScribbleCommand.m */; };
+		4469D2241F67883F00022CE6 /* LCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4469D2231F67883F00022CE6 /* LCUser.m */; };
+		4469D2271F6789BD00022CE6 /* LCPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 4469D2261F6789BD00022CE6 /* LCPhoto.m */; };
+		4469D22A1F678A1800022CE6 /* LCAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 4469D2291F678A1800022CE6 /* LCAlbum.m */; };
 		44857C3A1F6613F1003B0D02 /* MultiScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44857C391F6613F1003B0D02 /* MultiScreenViewController.m */; };
 		44857C3D1F661910003B0D02 /* SecondScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44857C3C1F661910003B0D02 /* SecondScreenViewController.m */; };
 		44857C411F6622C8003B0D02 /* BatteryAndCPUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44857C401F6622C8003B0D02 /* BatteryAndCPUViewController.m */; };
@@ -745,6 +748,12 @@
 		4458194B1EA75C2C00AFF67C /* WGS84TOGCJ02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS84TOGCJ02.m; sourceTree = "<group>"; };
 		446024A81EEE2241003589A0 /* OpenScribbleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenScribbleCommand.h; sourceTree = "<group>"; };
 		446024A91EEE2241003589A0 /* OpenScribbleCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenScribbleCommand.m; sourceTree = "<group>"; };
+		4469D2221F67883F00022CE6 /* LCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUser.h; sourceTree = "<group>"; };
+		4469D2231F67883F00022CE6 /* LCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUser.m; sourceTree = "<group>"; };
+		4469D2251F6789BD00022CE6 /* LCPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPhoto.h; sourceTree = "<group>"; };
+		4469D2261F6789BD00022CE6 /* LCPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPhoto.m; sourceTree = "<group>"; };
+		4469D2281F678A1800022CE6 /* LCAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAlbum.h; sourceTree = "<group>"; };
+		4469D2291F678A1800022CE6 /* LCAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAlbum.m; sourceTree = "<group>"; };
 		44857C381F6613F1003B0D02 /* MultiScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiScreenViewController.h; sourceTree = "<group>"; };
 		44857C391F6613F1003B0D02 /* MultiScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiScreenViewController.m; sourceTree = "<group>"; };
 		44857C3B1F661910003B0D02 /* SecondScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondScreenViewController.h; sourceTree = "<group>"; };
@@ -1731,6 +1740,30 @@
 			name = "委托:解决循环";
 			sourceTree = "<group>";
 		};
+		4469D2201F67873900022CE6 /* 使用不可变的实体 */ = {
+			isa = PBXGroup;
+			children = (
+				4469D2221F67883F00022CE6 /* LCUser.h */,
+				4469D2231F67883F00022CE6 /* LCUser.m */,
+				4469D2251F6789BD00022CE6 /* LCPhoto.h */,
+				4469D2261F6789BD00022CE6 /* LCPhoto.m */,
+				4469D2281F678A1800022CE6 /* LCAlbum.h */,
+				4469D2291F678A1800022CE6 /* LCAlbum.m */,
+			);
+			name = "使用不可变的实体";
+			sourceTree = "<group>";
+		};
+		4469D2211F67878500022CE6 /* 同步块和读写锁 */ = {
+			isa = PBXGroup;
+			children = (
+				44857C431F66751F003B0D02 /* HPUser.h */,
+				44857C441F66751F003B0D02 /* HPUser.m */,
+				44857C461F6675D2003B0D02 /* HPUpdaterService.h */,
+				44857C471F6675D2003B0D02 /* HPUpdaterService.m */,
+			);
+			name = "同步块和读写锁";
+			sourceTree = "<group>";
+		};
 		44857C371F6613B2003B0D02 /* 多屏 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1754,10 +1787,8 @@
 		44857C421F6674F5003B0D02 /* 线程安全 */ = {
 			isa = PBXGroup;
 			children = (
-				44857C431F66751F003B0D02 /* HPUser.h */,
-				44857C441F66751F003B0D02 /* HPUser.m */,
-				44857C461F6675D2003B0D02 /* HPUpdaterService.h */,
-				44857C471F6675D2003B0D02 /* HPUpdaterService.m */,
+				4469D2201F67873900022CE6 /* 使用不可变的实体 */,
+				4469D2211F67878500022CE6 /* 同步块和读写锁 */,
 			);
 			name = "线程安全";
 			sourceTree = "<group>";
@@ -3238,6 +3269,7 @@
 				44FED0FE1ECC19410073DA1D /* UIView+YYAdd.m in Sources */,
 				441395551EA8892E003DC44D /* CustomAnnotationView.m in Sources */,
 				4427186C1EDE499F00F9C3D3 /* LCPassBookTypeViewController.m in Sources */,
+				4469D2241F67883F00022CE6 /* LCUser.m in Sources */,
 				44FED0D71ECBFB6B0073DA1D /* YYFrameImage.m in Sources */,
 				44FED0F91ECC19410073DA1D /* NSData+YYAdd.m in Sources */,
 				44FED0AD1ECBF8160073DA1D /* YYTextLine.m in Sources */,
@@ -3315,6 +3347,7 @@
 				44857C481F6675D2003B0D02 /* HPUpdaterService.m in Sources */,
 				44E39D6A1E134EFD006C7EFA /* AppDelegate.m in Sources */,
 				445282041F45870900269993 /* HightPerformanceViewController.m in Sources */,
+				4469D2271F6789BD00022CE6 /* LCPhoto.m in Sources */,
 				44D3DE261EE7962A00386A39 /* UIWebViewJSViewController.m in Sources */,
 				44F1A58E1ECD4AB600C7DA4A /* SuPhotoPreviewer.m in Sources */,
 				445282011F45688600269993 /* timeSourceModel.m in Sources */,
@@ -3425,6 +3458,7 @@
 				44D3DE2D1EE7964300386A39 /* JSUIWebViewViewController.m in Sources */,
 				44857C3A1F6613F1003B0D02 /* MultiScreenViewController.m in Sources */,
 				44FF1AC11ECE9CF6007E4F6B /* ICFTimeLineCell.m in Sources */,
+				4469D22A1F678A1800022CE6 /* LCAlbum.m in Sources */,
 				44E39DA71E139E6E006C7EFA /* LCBackwardOneViewController.m in Sources */,
 				44F1A5961ECD4AB600C7DA4A /* SuPhotoPicker.m in Sources */,
 				44FED0A71ECBF8160073DA1D /* YYTextContainerView.m in Sources */,

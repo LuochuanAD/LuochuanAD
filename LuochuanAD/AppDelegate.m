@@ -28,10 +28,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [[AMapServices sharedServices] setEnableHTTPS:YES];
     [AMapServices sharedServices].apiKey=@"bd1a9bb8de2061db8e283827d76701ca";
-    
-    // Override point for customization after application launch.
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     tabBarVC=[[LCTabBarViewController alloc]init];
     
@@ -74,6 +71,39 @@
         UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"提醒" message:@"当前设备不支持打印机" delegate:nil cancelButtonTitle:@"我已知道" otherButtonTitles: nil];
         [alert show];
     }
+    /**-------------首次启动-----------------*/
+    NSString *deviceId=[[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    NSLog(@"--------deviceId----------%@",deviceId);
+    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    BOOL firstLaunch=![defaults objectForKey:@"appLaunched"];
+    if (firstLaunch) {
+        [defaults setBool:YES forKey:@"appLaunched"];
+        [defaults synchronize];
+        NSLog(@"----------安装应用后的首次启动------------");
+    }else{
+        NSLog(@"-----------第二次-----------------");
+    }
+    NSString *accessToken=nil;
+    if (!firstLaunch) {
+        accessToken=[defaults stringForKey:@"accessToken"];
+    }
+    if (accessToken) {
+        //用户登录
+        NSLog(@"---------用户登录----------");
+    }else{
+        if (firstLaunch) {
+        //首次启动
+            NSLog(@"------------首次启动--------------");
+        }else{
+        //用户未登录
+            NSLog(@"--------------用户未登录--------------------");
+        }
+    
+    }
+    /**-------------首次启动-----------------*/
+    
+    
+    
     
     
     
@@ -95,8 +125,7 @@
     }
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
 }
 
 
