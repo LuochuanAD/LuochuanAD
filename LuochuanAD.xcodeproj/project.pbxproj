@@ -190,6 +190,9 @@
 		4469D2241F67883F00022CE6 /* LCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4469D2231F67883F00022CE6 /* LCUser.m */; };
 		4469D2271F6789BD00022CE6 /* LCPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 4469D2261F6789BD00022CE6 /* LCPhoto.m */; };
 		4469D22A1F678A1800022CE6 /* LCAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 4469D2291F678A1800022CE6 /* LCAlbum.m */; };
+		44771D522015D5F90087055C /* LCCoreAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44771D4C2015D5F80087055C /* LCCoreAnimationView.m */; };
+		44771D532015D5F90087055C /* LCCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44771D4E2015D5F90087055C /* LCCoreAnimationViewController.m */; };
+		44771D542015D5F90087055C /* LCCoreAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44771D4F2015D5F90087055C /* LCCoreAnimationManager.m */; };
 		44857C3A1F6613F1003B0D02 /* MultiScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44857C391F6613F1003B0D02 /* MultiScreenViewController.m */; };
 		44857C3D1F661910003B0D02 /* SecondScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44857C3C1F661910003B0D02 /* SecondScreenViewController.m */; };
 		44857C411F6622C8003B0D02 /* BatteryAndCPUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44857C401F6622C8003B0D02 /* BatteryAndCPUViewController.m */; };
@@ -754,6 +757,12 @@
 		4469D2261F6789BD00022CE6 /* LCPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPhoto.m; sourceTree = "<group>"; };
 		4469D2281F678A1800022CE6 /* LCAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAlbum.h; sourceTree = "<group>"; };
 		4469D2291F678A1800022CE6 /* LCAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAlbum.m; sourceTree = "<group>"; };
+		44771D4C2015D5F80087055C /* LCCoreAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCoreAnimationView.m; sourceTree = "<group>"; };
+		44771D4D2015D5F80087055C /* LCCoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCoreAnimationViewController.h; sourceTree = "<group>"; };
+		44771D4E2015D5F90087055C /* LCCoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCoreAnimationViewController.m; sourceTree = "<group>"; };
+		44771D4F2015D5F90087055C /* LCCoreAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCoreAnimationManager.m; sourceTree = "<group>"; };
+		44771D502015D5F90087055C /* LCCoreAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCoreAnimationView.h; sourceTree = "<group>"; };
+		44771D512015D5F90087055C /* LCCoreAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCoreAnimationManager.h; sourceTree = "<group>"; };
 		44857C381F6613F1003B0D02 /* MultiScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiScreenViewController.h; sourceTree = "<group>"; };
 		44857C391F6613F1003B0D02 /* MultiScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiScreenViewController.m; sourceTree = "<group>"; };
 		44857C3B1F661910003B0D02 /* SecondScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondScreenViewController.h; sourceTree = "<group>"; };
@@ -1630,6 +1639,7 @@
 		444E33D21E1B2D2100C9C8A3 /* Unitity */ = {
 			isa = PBXGroup;
 			children = (
+				44771D4B2015D5D80087055C /* 核心动画 */,
 				4444EABF1F4A768E00788F73 /* PushAnimation */,
 				445281F51F4564A100269993 /* highPerformances */,
 				44D3DE3D1EE7CA4500386A39 /* 设计模式 */,
@@ -1762,6 +1772,19 @@
 				44857C471F6675D2003B0D02 /* HPUpdaterService.m */,
 			);
 			name = "同步块和读写锁";
+			sourceTree = "<group>";
+		};
+		44771D4B2015D5D80087055C /* 核心动画 */ = {
+			isa = PBXGroup;
+			children = (
+				44771D512015D5F90087055C /* LCCoreAnimationManager.h */,
+				44771D4F2015D5F90087055C /* LCCoreAnimationManager.m */,
+				44771D502015D5F90087055C /* LCCoreAnimationView.h */,
+				44771D4C2015D5F80087055C /* LCCoreAnimationView.m */,
+				44771D4D2015D5F80087055C /* LCCoreAnimationViewController.h */,
+				44771D4E2015D5F90087055C /* LCCoreAnimationViewController.m */,
+			);
+			name = "核心动画";
 			sourceTree = "<group>";
 		};
 		44857C371F6613B2003B0D02 /* 多屏 */ = {
@@ -3328,6 +3351,7 @@
 				44F44E701E77F0170022A563 /* SDWebImageDecoder.m in Sources */,
 				44FED0701ECBD5C20073DA1D /* LCAirPrintEditingViewController.m in Sources */,
 				44D3DE741EE7F3C400386A39 /* CommandBarButton.m in Sources */,
+				44771D542015D5F90087055C /* LCCoreAnimationManager.m in Sources */,
 				445281F81F4566EA00269993 /* TimerViewController.m in Sources */,
 				44F1A5881ECD4AB600C7DA4A /* UIView+SuAnimation.m in Sources */,
 				44FED0B81ECBF8160073DA1D /* UIView+YYText.m in Sources */,
@@ -3340,6 +3364,7 @@
 				44F1A5871ECD4AB600C7DA4A /* UIView+SU.m in Sources */,
 				44E39DEB1E13AA3A006C7EFA /* AFURLRequestSerialization.m in Sources */,
 				44C61AEC1E2365F100BF623B /* GameCenterManager.m in Sources */,
+				44771D532015D5F90087055C /* LCCoreAnimationViewController.m in Sources */,
 				442884421EB96B2C001FA8B4 /* CustomAddressModel.m in Sources */,
 				44B7B6AB1E35FD2900C094B0 /* MLNavigationController.m in Sources */,
 				443A06061EEF783700B11248 /* SetStrokeColorCommand.m in Sources */,
@@ -3387,6 +3412,7 @@
 				44FED0B71ECBF8160073DA1D /* UIPasteboard+YYText.m in Sources */,
 				4445FE591EE9409700B8AD9D /* CanvasViewGenerator.m in Sources */,
 				4447EDA61EEA7AA00019E660 /* ScribbleThumbnailView.m in Sources */,
+				44771D522015D5F90087055C /* LCCoreAnimationView.m in Sources */,
 				44F1A53F1ECD47D200C7DA4A /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				44F1A4D01ECD291000C7DA4A /* SLQPrintPageRenderer.m in Sources */,
 				4445FE4F1EE932A200B8AD9D /* ScribbleMemento.m in Sources */,

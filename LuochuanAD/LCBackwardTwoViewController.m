@@ -16,9 +16,8 @@
 
 #import "RKSwipeBetweenViewControllers.h"
 #import "LCUIWebViewViewController.h"
-
+#import "LCCoreAnimationViewController.h"
 #import "CoordinatingController.h"
-
 @interface LCBackwardTwoViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *_tableView;
@@ -35,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _mutArray=@[@"机位Html",@"OC与JS交互",@"涂鸦"];
+    _mutArray=@[@"机位Html",@"OC与JS交互",@"涂鸦",@"核心动画"];
     
     UIBarButtonItem *rightBarItem=[[UIBarButtonItem alloc]initWithTitle:@"AirPrint" style:UIBarButtonItemStyleDone target:self action:@selector(pushToAirPrintEditingViewController)];
     [self.navigationItem setRightBarButtonItem:rightBarItem];
@@ -109,10 +108,12 @@
             
         }];
     }else if (indexPath.row==2){
-        CoordinatingController *coording=[CoordinatingController sharedinstance];
-        UIViewController *vc=[coording activeViewController];
-        [self presentViewController:vc animated:YES completion:nil];
+        CoordinatingController *vc=[CoordinatingController sharedinstance];
+        [self.navigationController pushViewController:vc animated:YES];
     
+    }else if (indexPath.row==3){
+        LCCoreAnimationViewController *vc=[[LCCoreAnimationViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 
 
