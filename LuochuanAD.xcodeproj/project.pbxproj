@@ -76,6 +76,25 @@
 		4428844B1EB9DD72001FA8B4 /* LCAddNewContactPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442884491EB9DD72001FA8B4 /* LCAddNewContactPersonViewController.m */; };
 		4428844C1EB9DD72001FA8B4 /* LCAddNewContactPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4428844A1EB9DD72001FA8B4 /* LCAddNewContactPersonViewController.xib */; };
 		4431B5811E5AE73400887480 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4431B5801E5AE73400887480 /* Launch Screen.storyboard */; };
+		4436400B202AC53B00C982B8 /* Test3DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44363FF4202AC53800C982B8 /* Test3DViewController.m */; };
+		4436400C202AC53B00C982B8 /* LayerLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 44363FF5202AC53800C982B8 /* LayerLable.m */; };
+		4436400D202AC53B00C982B8 /* hour.png in Resources */ = {isa = PBXBuildFile; fileRef = 44363FF7202AC53900C982B8 /* hour.png */; };
+		4436400E202AC53B00C982B8 /* digits.png in Resources */ = {isa = PBXBuildFile; fileRef = 44363FF8202AC53900C982B8 /* digits.png */; };
+		4436400F202AC53B00C982B8 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 44363FF9202AC53900C982B8 /* clock.png */; };
+		44364010202AC53B00C982B8 /* LCTestAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44363FFA202AC53900C982B8 /* LCTestAlertViewController.m */; };
+		44364011202AC53B00C982B8 /* minut.png in Resources */ = {isa = PBXBuildFile; fileRef = 44363FFC202AC53900C982B8 /* minut.png */; };
+		44364012202AC53B00C982B8 /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44363FFD202AC53900C982B8 /* ReflectionView.m */; };
+		44364013202AC53B00C982B8 /* Sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 44364000202AC53900C982B8 /* Sprites.png */; };
+		44364014202AC53B00C982B8 /* tiled.png in Resources */ = {isa = PBXBuildFile; fileRef = 44364001202AC53A00C982B8 /* tiled.png */; };
+		44364015202AC53B00C982B8 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 44364003202AC53A00C982B8 /* second.png */; };
+		44364016202AC53B00C982B8 /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44364004202AC53A00C982B8 /* ScrollView.m */; };
+		44364017202AC53B00C982B8 /* Spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 44364005202AC53A00C982B8 /* Spark.png */; };
+		44364018202AC53B00C982B8 /* Test3DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44364006202AC53B00C982B8 /* Test3DViewController.xib */; };
+		44364019202AC53B00C982B8 /* testScroll.png in Resources */ = {isa = PBXBuildFile; fileRef = 44364007202AC53B00C982B8 /* testScroll.png */; };
+		4436401A202AC53B00C982B8 /* LCAlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 44364008202AC53B00C982B8 /* LCAlertTool.m */; };
+		4436401B202AC53B00C982B8 /* TestPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 4436400A202AC53B00C982B8 /* TestPic.png */; };
+		4436401D202AC64700C982B8 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 4436401C202AC64700C982B8 /* ship.png */; };
+		44364020202AC6FC00C982B8 /* LCLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4436401F202AC6FB00C982B8 /* LCLayerViewController.m */; };
 		4436B1F11ED7FB410022D4A6 /* LCExculsionPathTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4436B1EF1ED7FB410022D4A6 /* LCExculsionPathTextViewController.m */; };
 		4436B1F21ED7FB410022D4A6 /* LCExculsionPathTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4436B1F01ED7FB410022D4A6 /* LCExculsionPathTextViewController.xib */; };
 		443A06021EEF744300B11248 /* large_dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 443A06001EEF744300B11248 /* large_dot.png */; };
@@ -590,6 +609,32 @@
 		442884491EB9DD72001FA8B4 /* LCAddNewContactPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAddNewContactPersonViewController.m; sourceTree = "<group>"; };
 		4428844A1EB9DD72001FA8B4 /* LCAddNewContactPersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCAddNewContactPersonViewController.xib; sourceTree = "<group>"; };
 		4431B5801E5AE73400887480 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		44363FF4202AC53800C982B8 /* Test3DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test3DViewController.m; sourceTree = "<group>"; };
+		44363FF5202AC53800C982B8 /* LayerLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerLable.m; sourceTree = "<group>"; };
+		44363FF6202AC53800C982B8 /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
+		44363FF7202AC53900C982B8 /* hour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hour.png; sourceTree = "<group>"; };
+		44363FF8202AC53900C982B8 /* digits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = digits.png; sourceTree = "<group>"; };
+		44363FF9202AC53900C982B8 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		44363FFA202AC53900C982B8 /* LCTestAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTestAlertViewController.m; sourceTree = "<group>"; };
+		44363FFB202AC53900C982B8 /* LCTestAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTestAlertViewController.h; sourceTree = "<group>"; };
+		44363FFC202AC53900C982B8 /* minut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minut.png; sourceTree = "<group>"; };
+		44363FFD202AC53900C982B8 /* ReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
+		44363FFE202AC53900C982B8 /* ScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollView.h; sourceTree = "<group>"; };
+		44363FFF202AC53900C982B8 /* LayerLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerLable.h; sourceTree = "<group>"; };
+		44364000202AC53900C982B8 /* Sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sprites.png; sourceTree = "<group>"; };
+		44364001202AC53A00C982B8 /* tiled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiled.png; sourceTree = "<group>"; };
+		44364002202AC53A00C982B8 /* Test3DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test3DViewController.h; sourceTree = "<group>"; };
+		44364003202AC53A00C982B8 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		44364004202AC53A00C982B8 /* ScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollView.m; sourceTree = "<group>"; };
+		44364005202AC53A00C982B8 /* Spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spark.png; sourceTree = "<group>"; };
+		44364006202AC53B00C982B8 /* Test3DViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test3DViewController.xib; sourceTree = "<group>"; };
+		44364007202AC53B00C982B8 /* testScroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testScroll.png; sourceTree = "<group>"; };
+		44364008202AC53B00C982B8 /* LCAlertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAlertTool.m; sourceTree = "<group>"; };
+		44364009202AC53B00C982B8 /* LCAlertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAlertTool.h; sourceTree = "<group>"; };
+		4436400A202AC53B00C982B8 /* TestPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestPic.png; sourceTree = "<group>"; };
+		4436401C202AC64700C982B8 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
+		4436401E202AC6FB00C982B8 /* LCLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLayerViewController.h; sourceTree = "<group>"; };
+		4436401F202AC6FB00C982B8 /* LCLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLayerViewController.m; sourceTree = "<group>"; };
 		4436B1EE1ED7FB410022D4A6 /* LCExculsionPathTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCExculsionPathTextViewController.h; sourceTree = "<group>"; };
 		4436B1EF1ED7FB410022D4A6 /* LCExculsionPathTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCExculsionPathTextViewController.m; sourceTree = "<group>"; };
 		4436B1F01ED7FB410022D4A6 /* LCExculsionPathTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCExculsionPathTextViewController.xib; sourceTree = "<group>"; };
@@ -1416,6 +1461,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		44363FF3202AC51600C982B8 /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+				4436401E202AC6FB00C982B8 /* LCLayerViewController.h */,
+				4436401F202AC6FB00C982B8 /* LCLayerViewController.m */,
+				4436401C202AC64700C982B8 /* ship.png */,
+				44363FF9202AC53900C982B8 /* clock.png */,
+				44363FF8202AC53900C982B8 /* digits.png */,
+				44363FF7202AC53900C982B8 /* hour.png */,
+				44363FFF202AC53900C982B8 /* LayerLable.h */,
+				44363FF5202AC53800C982B8 /* LayerLable.m */,
+				44364009202AC53B00C982B8 /* LCAlertTool.h */,
+				44364008202AC53B00C982B8 /* LCAlertTool.m */,
+				44363FFB202AC53900C982B8 /* LCTestAlertViewController.h */,
+				44363FFA202AC53900C982B8 /* LCTestAlertViewController.m */,
+				44363FFC202AC53900C982B8 /* minut.png */,
+				44363FF6202AC53800C982B8 /* ReflectionView.h */,
+				44363FFD202AC53900C982B8 /* ReflectionView.m */,
+				44363FFE202AC53900C982B8 /* ScrollView.h */,
+				44364004202AC53A00C982B8 /* ScrollView.m */,
+				44364003202AC53A00C982B8 /* second.png */,
+				44364005202AC53A00C982B8 /* Spark.png */,
+				44364000202AC53900C982B8 /* Sprites.png */,
+				44364002202AC53A00C982B8 /* Test3DViewController.h */,
+				44363FF4202AC53800C982B8 /* Test3DViewController.m */,
+				44364006202AC53B00C982B8 /* Test3DViewController.xib */,
+				4436400A202AC53B00C982B8 /* TestPic.png */,
+				44364007202AC53B00C982B8 /* testScroll.png */,
+				44364001202AC53A00C982B8 /* tiled.png */,
+			);
+			name = "动画";
+			sourceTree = "<group>";
+		};
 		443A060A1EEFB8C400B11248 /* Scribble Thumbnail Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1777,6 +1855,7 @@
 		44771D4B2015D5D80087055C /* 核心动画 */ = {
 			isa = PBXGroup;
 			children = (
+				44363FF3202AC51600C982B8 /* 动画 */,
 				44771D512015D5F90087055C /* LCCoreAnimationManager.h */,
 				44771D4F2015D5F90087055C /* LCCoreAnimationManager.m */,
 				44771D502015D5F90087055C /* LCCoreAnimationView.h */,
@@ -3084,6 +3163,7 @@
 				443A060F1EEFBE8C00B11248 /* background_texture.png in Resources */,
 				444DF3AD1EB8305D00964835 /* near.png in Resources */,
 				444DF3B01EB8305D00964835 /* out.png in Resources */,
+				4436400F202AC53B00C982B8 /* clock.png in Resources */,
 				44D3DE391EE7967900386A39 /* UIWebViewJS_file.html in Resources */,
 				444DF3B11EB8305D00964835 /* peakTravellerRank.html in Resources */,
 				44D3DE6F1EE7EA3500386A39 /* redo.png in Resources */,
@@ -3101,6 +3181,7 @@
 				444DF3AC1EB8305D00964835 /* more.png in Resources */,
 				44D3DE381EE7967900386A39 /* UIWebView_location.html in Resources */,
 				444DF3C01EB8346D00964835 /* placeOn.html in Resources */,
+				4436400E202AC53B00C982B8 /* digits.png in Resources */,
 				444B50091EDE9AB6007AD9B3 /* CouponViewController.xib in Resources */,
 				44D3DE361EE7967900386A39 /* light_advice.png in Resources */,
 				44050BB21ED6CA7A00FAA342 /* LCTextViewKitViewController.xib in Resources */,
@@ -3119,6 +3200,7 @@
 				44D3DB6C1EE78E2300386A39 /* RootViewController.xib in Resources */,
 				44F1A59D1ECD4AB600C7DA4A /* SuPhotoBrowserCell.xib in Resources */,
 				44E39DC91E13A616006C7EFA /* lcairport1@3x.png in Resources */,
+				44364017202AC53B00C982B8 /* Spark.png in Resources */,
 				4431B5811E5AE73400887480 /* Launch Screen.storyboard in Resources */,
 				441395501EA862FB003DC44D /* restaurant.png in Resources */,
 				444DF3B71EB8305D00964835 /* real.png in Resources */,
@@ -3140,6 +3222,7 @@
 				444DF3B61EB8305D00964835 /* rank.png in Resources */,
 				444DF3A91EB8305D00964835 /* levelSix.png in Resources */,
 				4428844C1EB9DD72001FA8B4 /* LCAddNewContactPersonViewController.xib in Resources */,
+				4436401D202AC64700C982B8 /* ship.png in Resources */,
 				44E39D851E136306006C7EFA /* flightAnimation@2x.png in Resources */,
 				44D3DE2C1EE7964300386A39 /* JSUIWebView.html in Resources */,
 				44F1A5441ECD47D200C7DA4A /* ImageEditVC.xib in Resources */,
@@ -3154,6 +3237,7 @@
 				441593E31EC1A7F900137BBF /* keys.mp3 in Resources */,
 				444E33DB1E1B85D600C9C8A3 /* informationDelete@2x.png in Resources */,
 				443CB3481EA9D59C002089C8 /* building.png in Resources */,
+				44364014202AC53B00C982B8 /* tiled.png in Resources */,
 				441593D61EC19D0C00137BBF /* button_on.png in Resources */,
 				441593E11EC19F7200137BBF /* tree_01.png in Resources */,
 				444DF3A71EB8305D00964835 /* levelFour.png in Resources */,
@@ -3166,12 +3250,15 @@
 				44D3DE6E1EE7EA3500386A39 /* undo.png in Resources */,
 				444DF3BD1EB8305D00964835 /* travellerOn.html in Resources */,
 				442718931EDE64F700F9C3D3 /* Generic.pkpass in Resources */,
+				4436400D202AC53B00C982B8 /* hour.png in Resources */,
 				444DF3BE1EB8305D00964835 /* travellerOnBg.png in Resources */,
+				44364013202AC53B00C982B8 /* Sprites.png in Resources */,
 				441593DE1EC19F7200137BBF /* tree_02.png in Resources */,
 				44E39DC71E13A616006C7EFA /* lcairport1@2x.png in Resources */,
 				44F1A58D1ECD4AB600C7DA4A /* SuPhotoBrowser.xib in Resources */,
 				4447ED981EEA2A760019E660 /* delete.png in Resources */,
 				444DF3BC1EB8305D00964835 /* TravellerHour.html in Resources */,
+				44364019202AC53B00C982B8 /* testScroll.png in Resources */,
 				44D3DD451EE7954600386A39 /* HightCharsWebViewViewController.xib in Resources */,
 				44CEFF201EADC555002D1C5E /* LCUIWebViewViewController.xib in Resources */,
 				44D3DE191EE795FC00386A39 /* WKWebViewJS_file.html in Resources */,
@@ -3189,7 +3276,9 @@
 				44D3DD431EE7954600386A39 /* HightchartsView.html in Resources */,
 				444B500D1EDE9AD9007AD9B3 /* StoreCardViewController.xib in Resources */,
 				444DF3AE1EB8305D00964835 /* on.png in Resources */,
+				44364015202AC53B00C982B8 /* second.png in Resources */,
 				44B7B6AF1E36011B00C094B0 /* leftside_shadow_bg@2x.png in Resources */,
+				44364011202AC53B00C982B8 /* minut.png in Resources */,
 				444DF3A11EB8305D00964835 /* flightErrorAnalyse.html in Resources */,
 				444DF3A01EB8305D00964835 /* flightError.png in Resources */,
 				442884471EB9B2DD001FA8B4 /* LCContactDetailViewController.xib in Resources */,
@@ -3199,6 +3288,7 @@
 				44D3DD411EE7954600386A39 /* highcharts.js in Resources */,
 				44E39D831E136300006C7EFA /* lcwelcom@2x.png in Resources */,
 				44E39DD21E13A708006C7EFA /* focus_iconadd1.png in Resources */,
+				4436401B202AC53B00C982B8 /* TestPic.png in Resources */,
 				44F1A5911ECD4AB600C7DA4A /* SuBack@2x.png in Resources */,
 				444DF3A21EB8305D00964835 /* flightHour.html in Resources */,
 				445538A11E5EBCDB0018A35F /* Nav_new_rightarrow@3x.png in Resources */,
@@ -3242,6 +3332,7 @@
 				443A06021EEF744300B11248 /* large_dot.png in Resources */,
 				44D3DE431EE7CC3C00386A39 /* CanvasViewController.xib in Resources */,
 				44D3DE6C1EE7EA3500386A39 /* palette.png in Resources */,
+				44364018202AC53B00C982B8 /* Test3DViewController.xib in Resources */,
 				44D3DE1B1EE795FC00386A39 /* WKWebView_location.html in Resources */,
 				44E39DB71E13A60C006C7EFA /* lcflight1@3x.png in Resources */,
 			);
@@ -3288,8 +3379,10 @@
 				806B08D01EE8243D00FD50F6 /* Vertex.m in Sources */,
 				44FED0B51ECBF8160073DA1D /* NSAttributedString+YYText.m in Sources */,
 				44E39DAA1E139E8D006C7EFA /* LCBackwardTwoViewController.m in Sources */,
+				4436400B202AC53B00C982B8 /* Test3DViewController.m in Sources */,
 				44FED0BB1ECBF8160073DA1D /* YYTextUtilities.m in Sources */,
 				44FED0FE1ECC19410073DA1D /* UIView+YYAdd.m in Sources */,
+				44364020202AC6FC00C982B8 /* LCLayerViewController.m in Sources */,
 				441395551EA8892E003DC44D /* CustomAnnotationView.m in Sources */,
 				4427186C1EDE499F00F9C3D3 /* LCPassBookTypeViewController.m in Sources */,
 				4469D2241F67883F00022CE6 /* LCUser.m in Sources */,
@@ -3298,6 +3391,7 @@
 				44FED0AD1ECBF8160073DA1D /* YYTextLine.m in Sources */,
 				44D3DE7E1EE7FA5000386A39 /* DeleteScribbleCommand.m in Sources */,
 				44FED0AA1ECBF8160073DA1D /* YYTextInput.m in Sources */,
+				4436400C202AC53B00C982B8 /* LayerLable.m in Sources */,
 				44F1A4C51ECD1FCC00C7DA4A /* LCAirPrintHtmlViewController.m in Sources */,
 				44F44E7A1E77F0170022A563 /* UIImageView+WebCache.m in Sources */,
 				44F1A5991ECD4AB600C7DA4A /* SuPhotoManager.m in Sources */,
@@ -3328,6 +3422,7 @@
 				442718771EDE62DD00F9C3D3 /* CouponViewController.m in Sources */,
 				4427187D1EDE631F00F9C3D3 /* StoreCardViewController.m in Sources */,
 				44F1A5971ECD4AB600C7DA4A /* SuMessageTool.m in Sources */,
+				44364010202AC53B00C982B8 /* LCTestAlertViewController.m in Sources */,
 				44FF1AC31ECE9CF6007E4F6B /* ICFTimelineViewController.m in Sources */,
 				44F1A5851ECD4AB600C7DA4A /* UIButton+SU.m in Sources */,
 				44F44E6E1E77F0170022A563 /* SDImageCacheConfig.m in Sources */,
@@ -3459,6 +3554,7 @@
 				44F1A4CE1ECD291000C7DA4A /* SLQPDFPreViewController.m in Sources */,
 				44FED0BE1ECBF8160073DA1D /* YYTextView.m in Sources */,
 				44D3DE471EE7CC5900386A39 /* PaletteViewController.m in Sources */,
+				44364012202AC53B00C982B8 /* ReflectionView.m in Sources */,
 				44F44E6D1E77F0170022A563 /* SDImageCache.m in Sources */,
 				4447ED9F1EEA796A0019E660 /* ScribbleManager.m in Sources */,
 				44FED0FB1ECC19410073DA1D /* UIControl+YYAdd.m in Sources */,
@@ -3474,7 +3570,9 @@
 				444DF3C71EB865FC00964835 /* UIViewController+getContactInfo.m in Sources */,
 				44D3DE7B1EE7FA2D00386A39 /* SaveScribbleCommand.m in Sources */,
 				44F1A59C1ECD4AB600C7DA4A /* SuPhotoBrowserCell.m in Sources */,
+				4436401A202AC53B00C982B8 /* LCAlertTool.m in Sources */,
 				441448581EBAB57600A6F091 /* JKRBubbleDelegate.m in Sources */,
+				44364016202AC53B00C982B8 /* ScrollView.m in Sources */,
 				44FED0DA1ECBFB6B0073DA1D /* YYSpriteSheetImage.m in Sources */,
 				44FED0FF1ECC19410073DA1D /* YYFPSLabel.m in Sources */,
 				44FED0BA1ECBF8160073DA1D /* YYTextTransaction.m in Sources */,

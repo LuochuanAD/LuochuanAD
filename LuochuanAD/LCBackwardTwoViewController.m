@@ -18,6 +18,8 @@
 #import "LCUIWebViewViewController.h"
 #import "LCCoreAnimationViewController.h"
 #import "CoordinatingController.h"
+
+#import "LCLayerViewController.h"
 @interface LCBackwardTwoViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *_tableView;
@@ -34,7 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _mutArray=@[@"机位Html",@"OC与JS交互",@"涂鸦",@"核心动画"];
+    _mutArray=@[@"机位Html",@"OC与JS交互",@"涂鸦",@"核心动画",@"动画"];
     
     UIBarButtonItem *rightBarItem=[[UIBarButtonItem alloc]initWithTitle:@"AirPrint" style:UIBarButtonItemStyleDone target:self action:@selector(pushToAirPrintEditingViewController)];
     [self.navigationItem setRightBarButtonItem:rightBarItem];
@@ -113,6 +115,9 @@
     
     }else if (indexPath.row==3){
         LCCoreAnimationViewController *vc=[[LCCoreAnimationViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row==4){
+        LCLayerViewController *vc=[[LCLayerViewController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 

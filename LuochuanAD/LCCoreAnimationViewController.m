@@ -104,12 +104,16 @@
     
 //    [self operationImagesForFilter];
     
-    UIImage *currentImage=[self createImage];
+//    UIImage *currentImage=[self createImage];
+//
+//    UIImageView *currentImageView=[[UIImageView alloc]initWithImage:currentImage];
+//    [LCCoreAnimationManager heartbeatView:currentImageView duration:5];
+//
+//    [self.view addSubview:currentImageView];
     
-    UIImageView *currentImageView=[[UIImageView alloc]initWithImage:currentImage];
-    [LCCoreAnimationManager heartbeatView:currentImageView duration:5];
     
-    [self.view addSubview:currentImageView];
+    
+    
     
 
 }
